@@ -1,0 +1,428 @@
+:root{
+    /*Theme 1 color variables*/
+    --theme1_body:hsl(222, 26%, 31%);
+    --theme1_screen_background:hsl(224, 36%, 15%);
+    --theme1_screen:white;
+    --theme1_grid:hsl(223, 31%, 20%);
+    --theme1_button_main_color: hsl(221, 14%, 31%);
+    --theme1_button_main_background: hsl(30, 25%, 89%);
+    --theme1_button_main_boxshadow: 0px 3px 1px 0px hsl(28, 16%, 65%);
+    --theme1_button_main_hover:hsl(0, 0%, 100%);
+    --theme1_button_alt_color:hsl(0, 0%, 100%);
+    --theme1_button_alt_background:hsl(225, 21%, 49%);
+    --theme1_button_alt_boxshadow: 0px 3px 1px 0px hsl(224, 28%, 35%);
+    --theme1_button_alt_hover:hsl(223, 44%, 67%);
+    --theme1_button_equals_background:hsl(6, 63%, 50%);
+    --theme1_button_equals_boxshadow:0px 3px 1px 0px hsl(6, 70%, 34%);
+    --theme1_button_equals_hover:rgb(213, 94, 94);
+    /*Theme 2 color variables*/
+    --theme2_body:hsl(0, 0%, 90%);
+    --theme2_screen_background:hsl(0, 0%, 93%);
+    --theme2_screen:hsl(60, 10%, 19%);
+    --theme2_grid:hsl(0, 5%, 81%);
+    --theme2_button_main_color: hsl(60, 10%, 19%);
+    --theme2_button_main_background: hsl(45, 7%, 89%);
+    --theme2_button_main_boxshadow: 0px 3px 1px 0px hsl(35, 11%, 61%);
+    --theme2_button_main_hover:hsl(0, 0%, 100%);
+    --theme2_button_alt_color:hsl(0, 0%, 100%);
+    --theme2_button_alt_background:hsl(185, 42%, 37%);
+    --theme2_button_alt_boxshadow: 0px 3px 1px 0px hsl(185, 58%, 25%);
+    --theme2_button_alt_hover:hsl(185, 47%, 54%);
+    --theme2_button_equals_background:hsl(25, 98%, 40%);
+    --theme2_button_equals_boxshadow:0px 3px 1px 0px hsl(25, 99%, 27%);
+    --theme2_button_equals_hover:hsl(25, 84%, 60%);
+    /*Theme 3 color variables*/
+    --theme3_body:hsl(268, 75%, 9%);
+    --theme3_screen_background:hsl(268, 71%, 12%);
+    --theme3_screen:hsl(52, 100%, 62%);
+    --theme3_grid:hsl(268, 71%, 12%);
+    --theme3_button_main_color: hsl(52, 100%, 62%);
+    --theme3_button_main_background: hsl(268, 47%, 21%);
+    --theme3_button_main_boxshadow: 0px 3px 1px 0px hsl(290, 70%, 36%);
+    --theme3_button_main_hover:hsl(290, 85%, 52%);
+    --theme3_button_alt_color:hsl(0, 0%, 100%);
+    --theme3_button_alt_background:hsl(281, 89%, 26%);
+    --theme3_button_alt_boxshadow: 0px 3px 1px 0px hsl(285, 91%, 52%);
+    --theme3_button_alt_hover:hsl(281, 76%, 39%);
+    --theme3_button_equals_background:hsl(176, 100%, 44%);
+    --theme3_button_equals_boxshadow:0px 3px 1px 0px hsl(177, 92%, 70%);
+    --theme3_button_equals_hover:hsl(177, 92%, 70%);
+
+}
+
+
+
+
+body{
+    background-color: var(--theme1_body);  
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+body.alt-theme1{
+    background-color: var(--theme2_body);
+}
+
+body.alt-theme2{
+    background-color: var(--theme3_body);
+}
+
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: flex-start;
+   
+    
+    
+    height: 100vh; /* Make sure the body takes up the full height of the viewport */
+    margin: 0;
+}
+.flex-box>div{
+    margin: 8px;
+    
+}
+.parent{
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+ 
+  
+}
+.labelcontainer{
+  align-self: flex-start;
+  text-align: center;
+  padding :10px;
+  font-size: 32px;
+  font-family: 'League Spartan', sans-serif;
+  color:white;
+}
+
+.labelcontainer.alt-theme1{
+  align-self: flex-start;
+  text-align: center;
+  padding :10px;
+  font-size: 32px;
+  font-family: 'League Spartan', sans-serif;
+  color:var(--theme2_screen);
+}
+
+.labelcontainer.alt-theme2{
+  align-self: flex-start;
+  text-align: center;
+  padding :10px;
+  font-size: 32px;
+  font-family: 'League Spartan', sans-serif;
+  color:var(--theme3_screen);
+}
+
+.slidecontainer {
+  
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding :10px;
+  font-family: 'League Spartan', sans-serif;
+  color:white;
+  
+}
+
+.slidecontainer.alt-theme1 {
+  
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding :10px;
+  font-family: 'League Spartan', sans-serif;
+  color:var(--theme2_screen);
+  
+}
+
+.slidecontainer.alt-theme2 {
+  
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding :10px;
+  font-family: 'League Spartan', sans-serif;
+  color:var(--theme3_screen)
+  
+}
+
+input[type="range"] {
+  /* Removes default styles */
+  -webkit-appearance: none;
+  appearance: none;
+  /* Dimensions of the slider track */
+  width: 40px;
+  height: 15px;
+  padding-left:5px;
+  padding-right: 5px;
+  background-color: var(--theme1_grid);
+  /* Styles for the slider thumb */
+  
+  border-radius: 10px;
+  cursor: pointer;
+
+  /* Remove default outline in some browsers */
+  outline: none;
+}
+input[type="range"].alt-theme1{
+  -webkit-appearance: none;
+  appearance: none;
+  /* Dimensions of the slider track */
+  width: 40px;
+  height: 15px;
+  padding-left:5px;
+  padding-right: 5px;
+  background-color: var(--theme2_grid);
+  /* Styles for the slider thumb */
+  
+  border-radius: 10px;
+  cursor: pointer;
+
+  /* Remove default outline in some browsers */
+  outline: none;
+}
+
+input[type="range"].alt-theme2{
+  -webkit-appearance: none;
+  appearance: none;
+  /* Dimensions of the slider track */
+  width: 40px;
+  height: 15px;
+  padding-left:5px;
+  padding-right: 5px;
+  background-color: var(--theme3_grid);
+  /* Styles for the slider thumb */
+  
+  border-radius: 10px;
+  cursor: pointer;
+
+  /* Remove default outline in some browsers */
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  
+  height: 15px; /* Adjust the height of the track as needed */
+   /* Adjust the border-radius if needed */
+  background-color: var(--theme1_grid);
+}
+input[type="range"].alt-theme1::-webkit-slider-runnable-track {
+  
+  height: 15px; /* Adjust the height of the track as needed */
+   /* Adjust the border-radius if needed */
+  background-color: var(--theme2_grid);
+}
+input[type="range"].alt-theme2::-webkit-slider-runnable-track {
+  
+  height: 15px; /* Adjust the height of the track as needed */
+   /* Adjust the border-radius if needed */
+  background-color: var(--theme3_grid);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 12px;
+  border-radius: 50%;
+  height:12px;
+  background: var(--theme1_button_equals_background);
+  
+  margin-top: 1px;
+  
+  -webkit-appearance: none;
+  /* Adjust the margin-top to center the thumb within the track */
+}
+
+input[type="range"].alt-theme1::-webkit-slider-thumb {
+  width: 12px;
+  border-radius: 50%;
+  height:12px;
+  background: var(--theme2_button_equals_background);
+  
+  margin-top: 1px;
+  
+  -webkit-appearance: none;
+  /* Adjust the margin-top to center the thumb within the track */
+}
+
+input[type="range"].alt-theme2::-webkit-slider-thumb {
+  width: 12px;
+  border-radius: 50%;
+  height:12px;
+  background: var(--theme3_button_equals_background);
+  
+  margin-top: 1px;
+  
+  -webkit-appearance: none;
+  /* Adjust the margin-top to center the thumb within the track */
+}
+
+.screen{
+    width: 380px;
+    text-align: right;
+    background-color: var(--theme1_screen_background);
+    padding: 20px;
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+}
+
+.screen.alt-theme1{
+    background-color: var(--theme2_screen_background);
+    color:var(--theme2_screen);
+}
+
+.screen.alt-theme2{
+    background-color: var(--theme3_screen_background);
+    color:var(--theme3_screen);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    width: fit-content;
+    background-color: var(--theme1_grid);
+    padding: 20px;
+    font-family: 'League Spartan', sans-serif;
+    gap: 20px 20px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+  .grid-container.alt-theme1{
+    background-color: var(--theme2_grid);
+  }
+  .grid-container.alt-theme2{
+   background-color: var(--theme3_grid);
+  }
+  .grid-container >button {
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 32px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .grid-container button:nth-child(-n+16):not(.item4){
+    background-color: var(--theme1_button_main_background);
+    color: var(--theme1_button_main_color);
+    box-shadow: var(--theme1_button_main_boxshadow);
+  }
+  .grid-container.alt-theme1 button:nth-child(-n+16):not(.item4){
+    background-color: var(--theme2_button_main_background);
+    color:var(--theme2_button_main_color);
+    box-shadow: var(--theme2_button_main_boxshadow);
+  }
+
+  .grid-container.alt-theme2 button:nth-child(-n+16):not(.item4){
+    background-color: var(--theme3_button_main_background);
+    color:var(--theme3_button_main_color);
+    box-shadow: var(--theme3_button_main_boxshadow);
+  }
+
+  .item4{
+    color: var(--theme1_button_alt_color);
+    background-color: var(--theme1_button_alt_background);
+    box-shadow: var(--theme1_button_alt_boxshadow);
+  }
+  .item4.alt-theme1{
+    color:var(--theme2_button_alt_color);
+    background-color: var(--theme2_button_alt_background);
+    box-shadow: var(--theme2_button_alt_boxshadow);
+  }
+
+  .item4.alt-theme2{
+    color:var(--theme3_button_alt_color);
+    background-color: var(--theme3_button_alt_background);
+    box-shadow: var(--theme3_button_alt_boxshadow);
+  }
+  
+  .item17{
+    grid-column: 1/3;
+    color:var(--theme1_button_alt_color);
+    background-color: var(--theme1_button_alt_background);
+    box-shadow: var(--theme1_button_alt_boxshadow);
+  }
+  .item17.alt-theme1{
+    grid-column: 1/3;
+    color:var(--theme2_button_alt_color);
+    background-color: var(--theme2_button_alt_background);
+    box-shadow: var(--theme2_button_alt_boxshadow);
+  }
+  .item17.alt-theme2{
+    grid-column: 1/3;
+    color:var(--theme3_button_alt_color);
+    background-color: var(--theme3_button_alt_background);
+    box-shadow: var(--theme3_button_alt_boxshadow);
+  }
+  
+  .item18{
+    grid-column: 3/5;
+    color:var(--theme1_button_alt_color);
+    background-color: var(--theme1_button_equals_background);
+    box-shadow: var(--theme1_button_equals_boxshadow);
+  }
+  .item18.alt-theme1{
+    grid-column: 3/5;
+    color:var(--theme2_button_alt_color);
+    background-color: var(--theme2_button_equals_background);
+    box-shadow: var(--theme2_button_equals_boxshadow);
+  }
+  .item18.alt-theme2{
+    grid-column: 3/5;
+    color:darkblue;
+    background-color: var(--theme3_button_equals_background);
+    box-shadow: var(--theme3_button_equals_boxshadow);
+  }
+
+  .grid-container button:nth-child(-n+16):not(.item4):hover {
+    background-color: var(--theme1_button_main_hover);
+  }
+  .grid-container.alt-theme1 button:nth-child(-n+16):not(.item4):hover {
+    background-color: var(--theme2_button_main_hover);
+  }
+  .grid-container.alt-theme2 button:nth-child(-n+16):not(.item4):hover {
+    background-color: var(--theme3_button_main_hover);
+  }
+
+  .grid-container button.item4:hover,.grid-container button.item17:hover{
+    background-color: var(--theme1_button_alt_hover);
+  }
+
+  .grid-container.alt-theme1 button.item4:hover,.grid-container.alt-theme1 button.item17:hover{
+    background-color: var(--theme2_button_alt_hover);
+  }
+
+  .grid-container.alt-theme2 button.item4:hover,.grid-container.alt-theme2 button.item17:hover{
+    background-color: var(--theme3_button_alt_hover);
+  }
+
+  .grid-container button.item18:hover{
+    background-color: var(--theme1_button_equals_hover);
+  }
+
+  .grid-container.alt-theme1 button.item18:hover{
+    background-color: var(--theme2_button_equals_hover);
+  }
+
+  .grid-container.alt-theme2 button.item18:hover{
+    background-color: var(--theme3_button_equals_hover);
+  }
+
+  .grid-container button:nth-child(-n+18):active {
+    transform: translateY(1px);
+  }
+  
+
+  
+
+ 

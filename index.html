@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700,700i"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="flex-box">
+      <div class="parent">
+      <div class ="labelcontainer">
+        <label for="labelcontainer">calc</label>
+      </div>
+      <div class="slidecontainer">
+        <label for="slider">1 2 3</label>
+        
+        <input class="slider"id="themeSlider"  type="range" min="1" max="3" value="1" />
+      </div>
+    </div>
+      <div max="20" class="screen" id="screen" style="padding-top: 40px; padding-bottom: 40px">
+        0
+      </div>
+      <div class="grid-container">
+        <button class="item1" value="7" onclick="appendNumber('7')">7</button>
+        <button class="item2" value="8" onclick="appendNumber('8')">8</button>
+        <button class="item3" value="9" onclick="appendNumber('9')">9</button>
+        <button class="item4" value="DEL" onclick="deleteNumber()">DEL</button>
+        <button class="item5" value="4" onclick="appendNumber('4')">4</button>
+        <button class="item6" value="5" onclick="appendNumber('5')">5</button>
+        <button class="item7" value="6" onclick="appendNumber('6')">6</button>
+        <button class="item8" value="+" onclick="appendOperator('+')">+</button>
+        <button class="item9" value="1" onclick="appendNumber('1')">1</button>
+        <button class="item10" value="2" onclick="appendNumber('2')">2</button>
+        <button class="item11" value="3" onclick="appendNumber('3')">3</button>
+        <button class="item12" value="-" onclick="appendOperator('-')">-</button>
+        <button class="item13" value="." onclick="appendDecimal()">.</button>
+        <button class="item14" value="0" onclick="appendNumber('0')">0</button>
+        <button class="item15" value="/" onclick="appendOperator('/')">/</button>
+        <button class="item16" value="x" onclick="appendOperator('x')">x</button>
+        <button class="item17" value="RESET" onclick="clearDisplay()">RESET</button>
+        <button class="item18" value="=" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="./themeSlider.js"></script>
+  <script src="./calc.js"></script>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Your Name Here</a>.
+  </div>
+</html>
