@@ -19,12 +19,6 @@ function deleteNumber() {
 function updateDisplay() {
   var inputElement = document.getElementById("screen");
   console.log(currentInput);
-  for(i=1;i<20;i+3){
-    
-  }
-  if(currentInput.length >3){
-    inputElement.innerHTML = currentInput +=',';
-  }else
   inputElement.innerHTML = currentInput - "0";
 }
 
